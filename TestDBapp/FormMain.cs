@@ -252,8 +252,8 @@ namespace TestDBapp
 			buttonSaveDetailedInfo.Enabled = false;
 			buttonEditDetailedInfo.Enabled = true;
 
-			/*abonentsBindingSource.EndEdit();
-			abonentsTableAdapter.Update(dataSet.abonents);*/
+			abonentsBindingSource.EndEdit();
+			abonentsTableAdapter.Update(dataSet);
 		}
 
 		private void buttonAddNewAbonent_Click(object sender, EventArgs e)
@@ -266,7 +266,7 @@ namespace TestDBapp
 			enableDetailedInfoTextBoxes();
 			clearDetailedInfoTextBoxes();
 						
-			//abonentsBindingSource.AddNew();
+			abonentsBindingSource.AddNew();
 		}
 
 		private void enableDetailedInfoTextBoxes()
